@@ -7,6 +7,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.currButton {
+  background-color: aquamarine;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: darkcyan;
+  border-style: solid;
+
+}
+
+.otherButton {
+  background-color: aquamarine;
+  color: indigo;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color: darkcyan;
+  border-style: ridge;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
