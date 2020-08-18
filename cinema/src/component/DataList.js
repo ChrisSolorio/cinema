@@ -8,6 +8,7 @@ const DataList = () => {
 
   const deleteData = async id => {
     try {
+      console.log(id)
       const deleteData = await fetch(`http://localhost:5000/create/${id}`, {
         method: "DELETE"
       });
@@ -51,7 +52,7 @@ const DataList = () => {
         <tbody>
 
           {datal.map(did => (
-            <tr key={did.todo_id}>
+            <tr key={did.movie_id}>
               <td>{did.title}</td>
           <td>{did.rating}</td>
           <td>{did.review}</td>
@@ -61,7 +62,7 @@ const DataList = () => {
               <td>
                 <button
                   className="btn btn-danger"
-                  onClick={() => deleteData(did.todo_id)}
+                  onClick={() => deleteData(did.movie_id)}
                 >
                   Delete
                 </button>
