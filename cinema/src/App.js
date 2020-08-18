@@ -1,9 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import Main from './Main.js';
-import Guide from './Guide';
+import Main from './component/Main.js';
 import './App.css';
-import UploadP from './Upload'
+import UploadP from './component/Upload'
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 
 function App() {
