@@ -52,7 +52,9 @@ const DataList = () => {
 
           {datal.map(did => (
             <tr key={did.todo_id}>
-              <td>{did.description}</td>
+              <td>{did.title}</td>
+          <td>{did.rating}</td>
+          <td>{did.review}</td>
               <td>
                 <EditDB did={did} />
               </td>
