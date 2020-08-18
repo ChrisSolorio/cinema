@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from "react-dom";
 import Guide from './Guide'
+import DataList from './DataList'
 
 class Main extends React.Component{
     constructor(){
@@ -21,7 +22,10 @@ class Main extends React.Component{
         return (
             <div>
             <Guide onClick = {this.handleClick} page = "main"></Guide>
-            <h2>Hello Page</h2>
+            <h3>This project is meant to display my ability to create a web app that works with a postgress database. Its a work in progress
+                due to a very limited amount of time I have to work on it. Been quite busy.
+            </h3>
+            <DataList/>
             
             </div>
     
