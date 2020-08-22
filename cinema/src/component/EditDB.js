@@ -17,15 +17,15 @@ const EditDB = ({did}) => {
         }
       );
       window.location = "/Upload";
-    } catch (err) {
-      console.error(err.message);
+    } catch (error) {
+      console.error(error.message);
     }
   };
 
   return (
     <Fragment>
       <button type="button" class="btn btn-dark" data-toggle="modal"
-        data-target={`#id${did.todo_id}`}>
+        data-target={`#id${did.movie_id}`}>
         Edit</button>
 
       <div
@@ -55,12 +55,9 @@ const EditDB = ({did}) => {
                 value={rating}
                 onChange={event => setRating(event.target.value)}
               />
-              <input
-                type="text"
-                className="form-control"
-                value={review}
-                onChange={event => setReview(event.target.value)}
-              />
+              <textarea class="form-control" value={review} 
+              onChange={(event) => setReview(event.target.value)} 
+              id="reviewBox" rows="3" placeholder="Movie Review"></textarea>
             </div>
 
             <div class="modal-footer">
