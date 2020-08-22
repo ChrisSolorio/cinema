@@ -24,7 +24,7 @@ const EditDB = ({did}) => {
 
   return (
     <Fragment>
-      <button type="button" class="btn btn-warning" data-toggle="modal"
+      <button type="button" class="btn btn-dark" data-toggle="modal"
         data-target={`#id${did.todo_id}`}>
         Edit</button>
 
@@ -66,7 +66,7 @@ const EditDB = ({did}) => {
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-warning"
+                class="btn btn-dark"
                 data-dismiss="modal"
                 onClick={event => editMovie(event)}
               >

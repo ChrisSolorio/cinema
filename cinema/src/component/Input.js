@@ -1,5 +1,6 @@
 import React, {Fragment, useState} from "react";
 import { FormGroup, FormControl } from "@material-ui/core";
+import './Input.css'
 
 export const Input = () => {
     const [title,setTitle] = useState("");
@@ -21,7 +22,7 @@ export const Input = () => {
     };
 
     return (
-        <div className = "mt-5">
+        <div className = "mt-5 container center_div">
             <form action = "">
                 <div className = "form-row">
                 <div className="col">
@@ -33,19 +34,11 @@ export const Input = () => {
                     placeholder="Movie Title"/>
                     </div>
 
-                    <div className="col">
-                    <input
-                    value={review}
-                    onChange={(event) => setReview(event.target.value)}
-                    type="text"
-                    className="form-control"
-                    placeholder="Write your Review"/>
-                    </div>
-                    <div className="col">
+            <div className="col">
             <select
               value={rating}
               onChange={(event) => setRating(event.target.value)}
-              className="custom-select my-1 mr-sm-2"
+              className="form-control"
             >
               <option disabled>Rating</option>
               <option value="10">10</option>
@@ -61,6 +54,11 @@ export const Input = () => {
             </select>
           </div>
           </div>
+          <div class="mt-5 form-group">
+              <textarea class="form-control" value={review} 
+              onChange={(event) => setReview(event.target.value)} 
+              id="reviewBox" rows="3" placeholder="Movie Review"></textarea>
+              </div>
           <form className = "text-center mt-5" onSubmit = {onSubmitForm}>
             <button className ="btn btn-success">Add </button>
         </form>

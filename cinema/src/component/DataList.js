@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import EditDB from "./EditDB";
 
 const DataList = () => {
@@ -39,7 +39,7 @@ const DataList = () => {
   return (
     <Fragment>
       {" "}
-      <table class="table mt-5 text-center table-bordered">
+      <table class="table mt-5 text-center table-bordered data_div">
         <thead>
           <tr>
             <th>Title</th>
