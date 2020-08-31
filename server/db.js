@@ -1,8 +1,8 @@
 const Pool = require("./node_modules/pg/lib").Pool;
 
 const pool = new Pool ({
-    user: "chris",
-    password: "root",
+    user: "temp_admin",
+    password: "temp_pass",
     host: "localhost",
     port: 5432,
     database: "cinema"

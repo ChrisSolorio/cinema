@@ -5,13 +5,18 @@ import Upload from './component/Upload'
 import Movie from './component/MoviePage'
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 
+const PageSelect = ({did}) => {
+
+};
+
+
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path = "/" component ={Main}/>
         <Route exact path = "/Upload" component = {Upload}/>
-        <Route path = "/MoviePage" component = {Movie}/>
+        <Route exact path = "/MoviePage/:id" component = {Movie}/>
 
       </Switch>
     </Router>
