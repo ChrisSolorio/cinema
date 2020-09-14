@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Link, Route,Switch} from 'react-router-dom';
 import EditDB from "./EditDB";
 
 const DataList = () => {
@@ -34,6 +34,12 @@ const DataList = () => {
     getData();
   }, []);
 
+  function handlePage(e){
+    //e.preventDefault();
+    console.log(e);
+    this.props.history.push(`/MoviePage/${e}`)
+  }
+
   console.log(datal);
 
   return (
@@ -53,7 +59,7 @@ const DataList = () => {
 
           {datal.map(did => (
             <tr key={did.movie_id}>
-              <td>{did.title}</td>
+              <td><Link to = {`/MoviePage/${did.movie_id}`}> {did.title}</Link></td>
           <td>{did.rating}</td>
           <td>{did.review}</td>
               <td>

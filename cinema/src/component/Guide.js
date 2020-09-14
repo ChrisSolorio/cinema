@@ -54,6 +54,20 @@ export const Guide = ({onClick,page}) => {
           </AppBar>
   
         );
+        case "side":
+          return (
+            <AppBar position = "static" style = {{background: theme.palette.secondary.dark, heigh:60}}>
+              <ToolBar style = {{margin : 0, padding : 0}}>
+                <Grid container direction = "row" alignitems = "flex-end" spacing = {1}>
+                  <Grid item>
+                  <button name = "MainButton" type = "button" className = "currButton" style = {{background:theme.palette.primary.main}} onClick = {onClick}>Welcome</button>
+                  <button name = "UpButton" type = "button" className = "currButton" style = {{background:theme.palette.primary.main}} onClick = {onClick}>Upload</button>
+                  </Grid>
+                  </Grid>
+              </ToolBar>
+            </AppBar>
+    
+          );
       default: return (<div></div>)
   }
 }

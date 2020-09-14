@@ -22,8 +22,8 @@ class Main extends React.Component{
         return (
             <div>
             <Guide onClick = {this.handleClick} page = "main"></Guide>
-            <h3>This project is meant to display my ability to create a web app that works with a postgress database. Its a work in progress
-                due to a very limited amount of time I have to work on it. Been quite busy.
+            <h3>This project is a simple web application meant show a couple of different components working together. The front end  built with React.js displays information
+                from a postgres SQL database. The backend is created with node.js
             </h3>
             <DataList/>
             

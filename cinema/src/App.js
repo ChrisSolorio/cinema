@@ -16,7 +16,7 @@ function App() {
       <Switch>
         <Route exact path = "/" component ={Main}/>
         <Route exact path = "/Upload" component = {Upload}/>
-        <Route exact path = "/MoviePage/:id" component = {Movie}/>
+        <Route path = "/MoviePage/:id" component = {Movie}/>
 
       </Switch>
     </Router>
