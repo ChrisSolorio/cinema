@@ -9,5 +9,7 @@ The great thing about this project is the ability to build upon what I have. Eve
 To run you need postgres, node.js, and react installed in your computer. 
 
 Navigate to /server/database.sql run file in postgres (you need to install postgres and log in to your admin account in the command terminal to run this file)
+
 Then run /server/index.js using "node index.js"
+
 Then navigate to /cinema and run using npm start
